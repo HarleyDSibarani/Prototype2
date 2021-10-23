@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="utama">#FB0505</color>
+    <color name="hint">#80FB0505</color>
+</resources>

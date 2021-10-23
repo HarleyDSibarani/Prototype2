@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pendaftaran"
+                android:textColor="@color/utama"
+                android:textSize="12pt" />
+
+            <EditText
+                android:id="@+id/RegisFullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:drawablePadding="10dp"
+                android:hint="Nama Lengkap"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/utama"
+                android:textColor="@color/utama"
+                android:background="@drawable/kotak_teks"
+                android:drawableLeft="@drawable/ic_baseline_person_outline_24"/>
+
+            <EditText
+                android:id="@+id/Regisnohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:drawablePadding="10dp"
+                android:hint="No Telepon"
+                android:inputType="number"
+                android:textColorHint="@color/utama"
+                android:textColor="@color/utama"
+                android:background="@drawable/kotak_teks"
+                android:drawableLeft="@drawable/ic_telephone"/>
+
+            <EditText
+                android:id="@+id/RegisEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:drawablePadding="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/utama"
+                android:textColor="@color/utama"
+                android:background="@drawable/kotak_teks"
+                android:drawableLeft="@drawable/ic_baseline_mail_outline_24"/>
+
+            <EditText
+                android:id="@+id/RegisPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/utama"
+                android:textColor="@color/utama"
+                android:background="@drawable/kotak_teks"
+                android:drawableLeft="@drawable/ic_key_outline"
+                />
+
+            <EditText
+                android:id="@+id/hasilroleuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="12dp"
+                android:drawablePadding="10dp"
+                android:hint="hasilrole"
+                android:inputType="textPassword"
+                android:textColorHint="@color/utama"
+                android:textColor="@color/utama"
+                android:background="@drawable/kotak_teks"
+                android:visibility="gone"
+                />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp"
+               android:gravity="center">
+
+               <TextView
+                   android:id="@+id/role"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:visibility="gone"/>
+
+               <CheckBox
+                   android:id="@+id/isReguler"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Reguler"
+                   android:textColor="@color/utama"
+                   android:layout_marginRight="20dp"/>
+
+               <CheckBox
+                   android:id="@+id/isWorkshop"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Bengkel"
+                   android:textColor="@color/utama"
+                   android:layout_marginRight="20dp"/>
+           </LinearLayout>
+
+            <Button
+                android:id="@+id/Registerbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="DAFTAR"
+                android:textAllCaps="false"
+                android:textColor="@color/utama"
+                android:textSize="14dp"
+                app:backgroundTint="@null" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:indeterminateDrawable="@drawable/progress_bar"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah punya akun ?"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:textColor="@color/utama"
+                />
+
+            <TextView
+                android:id="@+id/loginnowbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk Sekarang"
+                android:layout_gravity="center"
+                android:textColor="@color/utama"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/uri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Now"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

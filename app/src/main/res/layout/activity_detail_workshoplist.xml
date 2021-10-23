@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/detailnamaworkshoplist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:drawablePadding="10dp"
+                        android:textSize="7pt"
+                        android:hint="Nama Bengkel"
+                        android:textColorHint="@color/utama"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/kotak_teks"
+                        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                        android:editable="false"/>
+
+                    <EditText
+                        android:id="@+id/detailnohpworkshoplist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:drawablePadding="10dp"
+                        android:textSize="7pt"
+                        android:hint="No Telepon"
+                        android:textColorHint="@color/utama"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/kotak_teks"
+                        android:drawableLeft="@drawable/ic_telephone"
+                        android:editable="false"/>
+
+                    <EditText
+                        android:id="@+id/detailjenisworkshop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak_teks"
+                        android:hint="Jenis"
+                        android:textSize="7pt"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FB0505"
+                        android:textColorHint="#FB0505"
+                        android:editable="false"/>
+
+
+                    <EditText
+                        android:id="@+id/detailinformasiworkshoplist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:textSize="7pt"
+                        android:hint="Informasi"
+                        android:textColorHint="@color/utama"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/kotak_teks"
+                        android:editable="false"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <EditText
+                        android:id="@+id/detailalamatworkshoplist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/kotak_teks"
+                        android:hint="Alamat dan Detail Lokasi"
+                        android:textSize="7pt"
+                        android:padding="5dp"
+                        android:textColor="#FB0505"
+                        android:textColorHint="#FB0505"
+                        android:editable="false"/>
+
+                    <EditText
+                        android:id="@+id/detailLongitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak_teks"
+                        android:hint="Longitude"
+                        android:textSize="7pt"
+                        android:padding="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FB0505"
+                        android:textColorHint="#FB0505"
+                        android:editable="false"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/detailLatitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak_teks"
+                        android:hint="Latitude"
+                        android:textSize="7pt"
+                        android:padding="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FB0505"
+                        android:textColorHint="#FB0505"
+                        android:editable="false"
+                        android:visibility="gone"/>
+
+                    <fragment
+                        android:id="@+id/detailmap"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:text="Terima"
+                            android:textColor="@color/utama"
+                            android:background="@drawable/rounded_button"
+                            app:backgroundTint="@null"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

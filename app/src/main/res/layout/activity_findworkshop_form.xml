@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".findworkshop_form"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/namafindworkshop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:drawablePadding="10dp"
+                        android:textSize="7pt"
+                        android:hint="Nama Lengkap"
+                        android:textColorHint="@color/utama"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/kotak_teks"
+                        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+                        android:editable="false"/>
+
+                    <EditText
+                        android:id="@+id/nohpfindworkshop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:drawablePadding="10dp"
+                        android:textSize="7pt"
+                        android:hint="No Telepon"
+                        android:textColorHint="@color/utama"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/kotak_teks"
+                        android:drawableLeft="@drawable/ic_telephone"
+                        android:editable="false"/>
+
+
+                    <EditText
+                        android:id="@+id/jeniskendaraan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:drawablePadding="10dp"
+                        android:textSize="7pt"
+                        android:hint="Jenis Kendaraan"
+                        android:textColorHint="@color/hint"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/kotak_teks"/>
+
+                    <EditText
+                        android:id="@+id/informasifindworkshop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="12dp"
+                        android:drawablePadding="10dp"
+                        android:textSize="7pt"
+                        android:hint="Informasi"
+                        android:inputType="textMultiLine"
+                        android:textColorHint="@color/hint"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/kotak_teks"
+                        android:ems="10"/>
+
+                    <EditText
+                        android:id="@+id/pointlongitudefindworkshop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <EditText
+                        android:id="@+id/pointlatitudefindworkshop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/edlat"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="latitude"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edlong"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="longitude"
+                        android:textColor="#696969"
+                        android:textColorHint="#808080"
+                        android:visibility="gone" />
+                </TableRow>
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/alamatfindworkshop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/kotak_teks"
+                        android:hint="Alamat dan Detail Lokasi"
+                        android:textSize="7pt"
+                        android:padding="3dp"
+                        android:textColor="@color/utama"
+                        android:textColorHint="@color/hint" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/kotak_teks"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/kondisi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kondisi Sekitar"
+                            android:textColor="@color/utama"
+                            android:textSize="7pt"
+                            android:padding="3dp"/>
+
+                        <CheckBox
+                            android:id="@+id/isSepi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sepi"
+                            android:textColor="@color/utama"
+                            android:layout_marginLeft="15dp"
+                            />
+
+                        <CheckBox
+                            android:id="@+id/isRamai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ramai"
+                            android:textColor="@color/utama"
+                            android:layout_marginLeft="25dp"/>
+
+                    </LinearLayout>
+
+                    <fragment
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center"
+                        tools:context=".add_workshop"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/pointlongitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <EditText
+                        android:id="@+id/pointlatitude"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kirim"
+                        android:textColor="@color/utama"
+                        android:background="@drawable/rounded_button"
+                        app:backgroundTint="@null"
+                        android:layout_marginTop="10dp"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

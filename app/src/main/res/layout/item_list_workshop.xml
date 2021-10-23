@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kotakinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/kotak_teks">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/item_namaworkshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama                : "
+                    android:textSize="8pt"
+                    android:textColor="@color/utama"/>
+
+                <TextView
+                    android:id="@+id/item_namalistworkshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asep"
+                    android:textSize="8pt"
+                    android:textColor="@color/utama"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/item_jenisnorkshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Bengkel  : "
+                    android:textSize="8pt"
+                    android:textColor="@color/utama"/>
+
+
+                <TextView
+                    android:id="@+id/item_jawabanjenisworkshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:text="Rusak"
+                    android:textColor="@color/utama"/>
+
+                <TextView
+                    android:id="@+id/item_nohpworkshoplist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:text="Rusak"
+                    android:textColor="@color/utama"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/item_alamatdetailworkshoplist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:text="Rusak"
+                    android:textColor="@color/utama"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/item_longitudeworkshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:textColor="@color/utama"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/item_latitudeworkshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8pt"
+                    android:textColor="@color/utama"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/item_deskripsiworkshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi          : "
+                    android:textSize="8pt"
+                    android:textColor="@color/utama"/>
+
+                <TextView
+                    android:id="@+id/item_jawabandeskripsibengkel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asep"
+                    android:textSize="8pt"
+                    android:textColor="@color/utama"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
