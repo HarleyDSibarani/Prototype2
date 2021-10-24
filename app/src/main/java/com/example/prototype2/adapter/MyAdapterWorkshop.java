@@ -98,6 +98,7 @@ public class MyAdapterWorkshop extends RecyclerView.Adapter<MyAdapterWorkshop.My
                     intent.putExtra("dworkshoptelepon", needworkshop.getNoHP());
                     intent.putExtra("dworkshopalamatdetail", needworkshop.getAlamatDetail());
                     intent.putExtra("dworkshopkondisi", needworkshop.getKondisi());
+                    intent.putExtra("didhelp", needworkshop.getIDhelp());
 
                     intent.putExtra("dlongitude", needworkshop.getLongitude());
                     intent.putExtra("dlatitude", needworkshop.getLatitude());
@@ -115,7 +116,7 @@ public class MyAdapterWorkshop extends RecyclerView.Adapter<MyAdapterWorkshop.My
 
         public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-            TextView namaworkshop, bantuanworkshop, teleponpemintabantuanworkshop, alamatdetailpemintabantuanworkshop, detailkondisiworkshop, detailLongitude, detailLatitude, item_jawabanjarak;
+            TextView namaworkshop, bantuanworkshop, teleponpemintabantuanworkshop, alamatdetailpemintabantuanworkshop, detailkondisiworkshop, detailLongitude, detailLatitude, item_jawabanjarak,idhelp;
 
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
@@ -124,6 +125,7 @@ public class MyAdapterWorkshop extends RecyclerView.Adapter<MyAdapterWorkshop.My
                 teleponpemintabantuanworkshop = itemView.findViewById(R.id.item_nohpworkshop);
                 alamatdetailpemintabantuanworkshop = itemView.findViewById(R.id.item_alamatdetailworkshop);
                 detailkondisiworkshop = itemView.findViewById(R.id.item_kondisidetailworkshop);
+                idhelp = itemView.findViewById(R.id.idhelp);
 
                 detailLongitude = itemView.findViewById(R.id.item_longitudeworkshop);
                 detailLatitude = itemView.findViewById(R.id.item_latitudeworkshop);

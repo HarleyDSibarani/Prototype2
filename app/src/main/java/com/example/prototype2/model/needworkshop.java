@@ -10,6 +10,20 @@ public class needworkshop {
     private String Longitude;
     private String Latitude;
 
+    public needworkshop(String IDhelp) {
+        this.IDhelp = IDhelp;
+    }
+
+    public String getIDhelp() {
+        return IDhelp;
+    }
+
+    public void setIDhelp(String IDhelp) {
+        this.IDhelp = IDhelp;
+    }
+
+    private String IDhelp;
+
     public needworkshop(){}
 
     public needworkshop(String namaLengkap, String keterangan, String noHP, String jenisKendaraan, String alamatDetail, String kondisi, String longitude, String latitude) {

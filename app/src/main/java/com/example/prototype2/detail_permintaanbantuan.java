@@ -93,12 +93,7 @@ public class detail_permintaanbantuan extends AppCompatActivity {
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-
-
         userId = fAuth.getCurrentUser().getUid();
-
-
-
         client = LocationServices.getFusedLocationProviderClient(this);
         mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.detailmap);
 
@@ -134,7 +129,7 @@ public class detail_permintaanbantuan extends AppCompatActivity {
                 selesai.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        hapusdokumen();
+                        bantuanselesai();
                     }
                 });
 
@@ -191,7 +186,7 @@ public class detail_permintaanbantuan extends AppCompatActivity {
         }
     }
 
-    private void hapusdokumen(){
+    private void bantuanselesai(){
        fStore.collection("Needhelp").document(userId).delete();
         Toast.makeText(detail_permintaanbantuan.this, "Terima Kasih Telah Membantu", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getApplicationContext(), Reguler_Menu.class));

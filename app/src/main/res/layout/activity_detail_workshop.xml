@@ -140,6 +140,48 @@
                         android:editable="false"
                         android:visibility="gone"/>
 
+                    <EditText
+                        android:id="@+id/detailidhelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak_teks"
+                        android:textSize="7pt"
+                        android:padding="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FB0505"
+                        android:textColorHint="#FB0505"
+                        android:editable="false"
+                        android:visibility="gone"
+                        />
+
+                    <EditText
+                        android:id="@+id/namapenolong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak_teks"
+                        android:hint="namapenolong"
+                        android:textSize="7pt"
+                        android:padding="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FB0505"
+                        android:textColorHint="#FB0505"
+                        android:editable="false"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/nohppenolong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kotak_teks"
+                        android:hint="namapenolong"
+                        android:textSize="7pt"
+                        android:padding="3dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#FB0505"
+                        android:textColorHint="#FB0505"
+                        android:editable="false"
+                        android:visibility="gone"/>
+
                     <fragment
                         android:id="@+id/detailmap"
                         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -154,7 +196,7 @@
                         android:layout_gravity="center">
 
                         <Button
-                            android:id="@+id/submit"
+                            android:id="@+id/terima"
                             android:layout_width="170dp"
                             android:layout_height="wrap_content"
                             android:text="Terima"
@@ -163,6 +205,18 @@
                             app:backgroundTint="@null"
                             android:layout_marginTop="10dp"
                             android:layout_marginLeft="10dp"/>
+
+                        <Button
+                            android:id="@+id/selesai"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:text="Selesai"
+                            android:textColor="@color/utama"
+                            android:background="@drawable/rounded_button"
+                            app:backgroundTint="@null"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:visibility="gone"/>
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

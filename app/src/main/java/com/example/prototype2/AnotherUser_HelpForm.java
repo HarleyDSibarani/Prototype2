@@ -59,7 +59,7 @@ public class AnotherUser_HelpForm extends AppCompatActivity {
     EditText helpname, helpnohp, helpemail,helpinformasi,pointlongitude, pointlatitude,detailalamat,jarak;
     CheckBox isSepi, isRamai;
     Button submit;
-    String userId,storageUrl;
+    String userId;
     Boolean valid = true;
     private Uri filepath;
 

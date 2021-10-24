@@ -106,6 +106,7 @@ public class add_workshop extends AppCompatActivity {
                     userInfo.put("AlamatDetail",helpalamat.getText().toString());
                     userInfo.put("Longitude",pointlongitude.getText().toString());
                     userInfo.put("Latitude",pointlatitude.getText().toString());
+                    userInfo.put("IDhelp",userId);
 
                     df.set(userInfo);
 

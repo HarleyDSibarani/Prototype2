@@ -190,7 +190,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/kotak_teks"
-                        android:hint="Latitude"
                         android:textSize="7pt"
                         android:padding="3dp"
                         android:layout_marginTop="10dp"
