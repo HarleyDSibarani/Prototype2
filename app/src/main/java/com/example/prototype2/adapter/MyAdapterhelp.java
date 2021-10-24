@@ -73,8 +73,6 @@ public class MyAdapterhelp extends RecyclerView.Adapter<MyAdapterhelp.MyViewHold
                             firebaseLatitude, firebaseLongitude,
                             results);
                     if (results[0] > 5000){
-                        //holder.itemView.setVisibility(View.GONE);
-//                            holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(0,0));
                         ViewGroup.LayoutParams params = holder.itemView.getLayoutParams();
                         params.height = 0;
                         params.width = 0;
@@ -85,7 +83,6 @@ public class MyAdapterhelp extends RecyclerView.Adapter<MyAdapterhelp.MyViewHold
                         DecimalFormat df = new DecimalFormat("#.##");
                         String result = df.format(results[0]/1000);
                         holder.itemView.setVisibility(View.VISIBLE);
-//                            holder.itemView.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                         holder.item_jawabanjarak.setText(result +" KM");
                     }
                 }

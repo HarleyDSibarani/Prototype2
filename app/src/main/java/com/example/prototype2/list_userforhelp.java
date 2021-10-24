@@ -58,7 +58,6 @@ public class list_userforhelp extends AppCompatActivity {
     FusedLocationProviderClient client;
     int position;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,8 +82,6 @@ public class list_userforhelp extends AppCompatActivity {
         recyclerView.getAdapter().notifyDataSetChanged();
         eventChangeListener();
 
-//        getdistance();
-
         swiperefreshuserhelp.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -94,13 +91,6 @@ public class list_userforhelp extends AppCompatActivity {
             }
         });
 
-//        Collections.sort(userArrayList, new Comparator<needhelp>() {
-//            public int compare(needhelp p1, needhelp p2) {
-//                return Double.compare(p1.getJarak(), p2.getJarak());
-//            }
-//        });
-//
-//        Log.d("Array :", userArrayList.toString());
     }
 
     private void refresh() {
@@ -135,26 +125,4 @@ public class list_userforhelp extends AppCompatActivity {
                     }
                 });
     }
-
-//    private void getdistance(){
-//        needhelp needhelp = userArrayList.get(position);
-//        Double firebaseLatitude = Double.parseDouble(needhelp.getLatitude());
-//        Double firebaseLongitude = Double.parseDouble(needhelp.getLongitude());
-//
-//        @SuppressLint("MissingPermission") Task<Location> task = client.getLastLocation();
-//        task.addOnSuccessListener(new OnSuccessListener<Location>() {
-//            @Override
-//            public void onSuccess(Location location) {
-//                if (location != null) {
-//                    float[] results = new float[1];
-//                    Location.distanceBetween(location.getLatitude(), location.getLongitude(),
-//                            firebaseLatitude, firebaseLongitude,
-//                            results);
-//                    DecimalFormat df = new DecimalFormat("#.##");
-//                    String result = df.format(results[0] / 1000);
-//                }
-//            }
-//        });
-//    }
-
 }

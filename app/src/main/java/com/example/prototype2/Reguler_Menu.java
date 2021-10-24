@@ -57,7 +57,7 @@ public class Reguler_Menu extends AppCompatActivity {
         formfinduser = findViewById(R.id.formfinduser);
         finduserhelp = findViewById(R.id.formfinduserhelp);
         formfindworkshop = findViewById(R.id.formfindworkshop);
-        daftarbengkel = findViewById(R.id.DaftarBengkel);
+//        daftarbengkel = findViewById(R.id.DaftarBengkel);
 
         namauser = findViewById(R.id.namauser);
         soshelp = findViewById(R.id.soshelp);
@@ -110,12 +110,12 @@ public class Reguler_Menu extends AppCompatActivity {
             }
         });
 
-        daftarbengkel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),list_workshop.class));
-            }
-        });
+//        daftarbengkel.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(),list_workshop.class));
+//            }
+//        });
 
         soshelp.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

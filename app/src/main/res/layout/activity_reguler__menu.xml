@@ -166,41 +166,41 @@
         android:gravity="center"
         android:layout_marginTop="20dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/DaftarBengkel"
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_margin="5dp"
-            app:cardCornerRadius="5dp"
-            android:clickable="true"
-            android:layout_gravity="center"
-            >
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/DaftarBengkel"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:cardCornerRadius="5dp"-->
+<!--            android:clickable="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            >-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="vertical">-->
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_help_list"
-                    android:background="@drawable/kotak_teks"
-                    />
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:src="@drawable/ic_help_list"-->
+<!--                    android:background="@drawable/kotak_teks"-->
+<!--                    />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bengkel Terdekat"
-                    android:gravity="center"
-                    android:textColor="@color/utama"
-                    android:layout_marginTop="5dp"
-                    android:textSize="17dp"/>
-            </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Bengkel Terdekat"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/utama"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:textSize="17dp"/>-->
+<!--            </LinearLayout>-->
 
-        </androidx.cardview.widget.CardView>
+<!--        </androidx.cardview.widget.CardView>-->
 
 <!--        <androidx.cardview.widget.CardView-->
 
